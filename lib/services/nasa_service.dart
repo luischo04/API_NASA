@@ -4,9 +4,10 @@ import 'package:taller_flutter/models/models.dart';
 class NasaService {
   Dio dio = Dio();
 
-  String apiKey = "C4LLpCfV97OFzdb1EpRRnPo3fMCJ4a4gaIafvCRC";
+  String apiKey = "OGEODHcECLsuBjyaunyfBwxTpmiTdMcGMoHWazg3";
 
-  Future<List<Asteroid>> getAsteroids(DateTime startDate, DateTime endDate) async {
+  Future<List<Asteroid>> getAsteroids(
+      DateTime startDate, DateTime endDate) async {
     String startDateFormatted = formatDate(startDate);
     String endDateFormatted = formatDate(endDate);
 
